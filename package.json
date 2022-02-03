@@ -2,6 +2,7 @@
   "name": "@relsqui/bb-contracts-api",
   "version": "1.0.0",
   "description": "",
+  "repository": "git@github.com:relsqui/bitburner-contract-api.git",
   "main": "index.js",
   "scripts": {},
   "author": "",
