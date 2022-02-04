@@ -12,7 +12,7 @@ import { jump } from "contracts/jump.js";
 import { trianglePath } from "contracts/triangle.js";
 import { allSums } from "contracts/maths.js";
 
-export default async function handleContract(ns, cType, cData) {
+export async function handleContract(ns, cType, cData) {
     switch (cType) {
         case "Algorithmic Stock Trader I":
         case "Algorithmic Stock Trader II":
@@ -81,3 +81,17 @@ export default async function handleContract(ns, cType, cData) {
             var answer = jump(cData);
     }
 }
+
+export async function handler (event, context) {
+    console.log('Received event:', JSON.stringify(event, null, 2));
+
+    const headers = {
+        'Content-Type': 'application/json',
+    };
+
+    return {
+        statusCode: 200,
+        body: JSON.stringify(event.queryStringParameters),
+        headers,
+    };
+};
