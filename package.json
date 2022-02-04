@@ -3,5 +3,5 @@
   "version": "1.0.0",
   "type": "module",
   "repository": "git@github.com:relsqui/bitburner-contract-api.git",
-  "main": "index.js",
+  "main": "index.js"
 }
