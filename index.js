@@ -1,16 +1,16 @@
-import { getTrades, pickTrades } from "contracts/trader.js";
-import { mkIPs } from "contracts/ips.js";
-import { makeValid } from "contracts/parens.js";
-import { paths } from "contracts/paths.js";
-import { blockedPaths } from "contracts/paths2.js";
-import { getSum } from "contracts/sum.js";
-import { subsum } from "contracts/subsub.js";
-import { spiral } from "contracts/spiral.js";
-import { factor } from "contracts/factor.js";
-import { solveIntervals } from "contracts/intervals.js";
-import { jump } from "contracts/jump.js";
-import { trianglePath } from "contracts/triangle.js";
-import { allSums } from "contracts/maths.js";
+import { getTrades, pickTrades } from "./contracts/trader.js";
+import { mkIPs } from "./contracts/ips.js";
+import { makeValid } from "./contracts/parens.js";
+import { paths } from "./contracts/paths.js";
+import { blockedPaths } from "./contracts/paths2.js";
+import { getSum } from "./contracts/sum.js";
+import { subsum } from "./contracts/subsub.js";
+import { spiral } from "./contracts/spiral.js";
+import { factor } from "./contracts/factor.js";
+import { solveIntervals } from "./contracts/intervals.js";
+import { jump } from "./contracts/jump.js";
+import { trianglePath } from "./contracts/triangle.js";
+import { allSums } from "./contracts/maths.js";
 
 export async function handleContract(ns, cType, cData) {
     switch (cType) {
